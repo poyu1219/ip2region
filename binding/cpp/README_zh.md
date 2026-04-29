@@ -22,7 +22,10 @@ test/bench.cc ------- 测速
 test/make.cc -------- 生成 xdb 文件
 test/edit_v4.cc ----- 测试 原始数据编辑(ipv4)
 test/edit_v6.cc ----- 测试 原始数据编辑(ipv6)
+test/ui.cc ---------- 交互式 IP 查询 UI
 
+
+bin/ui ------------ 交互式 IP 查询 UI
 
 bin --------------- 可执行文件目录(通过 make 生成)
 bin/header -------- 测试 头部
@@ -123,3 +126,17 @@ $ ./bin/make
 * 新的IP归属地文件顺序可以重叠, 只要无二义性, 程序会自动合并
 * 最终的结果会将相邻的且归属地相同的行自动合并
 * 以下测试, 原文件使用仓库自带的数据文件, 新文件使用当前目录下的 1.txt
+
+
+### 2.4 交互式 UI 查詢
+```
+$ make ui
+$ ./bin/ui ../../data/ip2region_v4.xdb 4 2
+```
+輸入 IP 後可直接看到城市/區域資訊，輸入 `q` 可退出。
+
+
+## 6. Visual Studio 專案（互動式 UI）
+- 專案位置：`binding/cpp/vs_ip_city_ui/`
+- 開啟 `vs_ip_city_ui.sln` 後，直接編譯執行即可。
+- 程式會提示輸入 xdb 路徑與 IP，並輸出城市/區域資訊。

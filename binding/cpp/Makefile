@@ -1,5 +1,5 @@
 
-all: bin header search bench make edit
+all: bin header search bench make edit ui
 
 FILES=$(wildcard src/*.cc)
 
@@ -25,3 +25,6 @@ edit: $(FILES)
 clean:
 	rm -rf bin
 
+
+ui: $(FILES) test/ui.cc | bin
+	g++ -std=c++11 -O2 $^ -o bin/$@
