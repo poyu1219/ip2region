@@ -18,7 +18,7 @@ public class MainForm : Form
         StartPosition = FormStartPosition.CenterScreen;
 
         var dbPath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "data", "ip2region_v4.xdb"));
-        _searcher = Searcher.NewWithFileOnly(dbPath);
+        _searcher = new Searcher(CachePolicy.File, dbPath);
 
         var panel = new Panel { Dock = DockStyle.Fill, Padding = new Padding(16) };
         panel.Controls.Add(_resultLabel);
