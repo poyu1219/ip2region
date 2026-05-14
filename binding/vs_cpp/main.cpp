@@ -3,7 +3,7 @@
 #include <memory>
 #include <string>
 
-#include "../binding/cpp/src/search.h"
+#include "../cpp/src/search.h"
 
 namespace {
 

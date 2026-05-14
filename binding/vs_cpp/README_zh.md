@@ -6,12 +6,12 @@
 - 介面：可輸入 xdb 路徑、IP、版本（IPv4/IPv6）、快取策略，按「查詢」顯示結果。
 
 ## 開啟方式
-1. 用 Visual Studio 2025 開啟 `vs_cpp/vs_cpp.sln`。
+1. 用 Visual Studio 2025 開啟 `binding/vs_cpp/vs_cpp.sln`。
 2. 選擇 `x64` + `Debug` 或 `Release`。
 3. 直接執行，會開啟 GUI 視窗。
 
 ## UI 功能
-- `XDB 路徑`：預設 `..\data\ip2region_v6.xdb`
+- `XDB 路徑`：預設 `..\..\data\ip2region_v6.xdb`
 - `IP`：預設 `2001:200:124::`
 - `版本`：IPv4 / IPv6
 - `快取`：

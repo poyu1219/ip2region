@@ -10,16 +10,16 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\binding\cpp\src\base.cc">
+    <ClCompile Include="..\cpp\src\base.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\binding\cpp\src\header.cc">
+    <ClCompile Include="..\cpp\src\header.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\binding\cpp\src\ip.cc">
+    <ClCompile Include="..\cpp\src\ip.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\binding\cpp\src\search.cc">
+    <ClCompile Include="..\cpp\src\search.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
